@@ -41,29 +41,57 @@ namespace Strings
 
             // problems
 
-            Console.WriteLine(" Is you first or last name longer? \n Please ener your fist name.");
-            string firstName = Console.ReadLine();
-            int lengthofname = firstName.Length;
-            //Console.WriteLine(lengthofname);
+            //Console.WriteLine(" Is you first or last name longer? \n Please ener your fist name.");
+            //string firstName = Console.ReadLine();
+            //int lengthofname = firstName.Length;
+            ////Console.WriteLine(lengthofname);
 
-            Console.WriteLine("Please enter your last name.");
-            string lastName = Console.ReadLine();
-            int lengthofLast = lastName.Length;
-            //Console.WriteLine(lengthofLast);
+            //Console.WriteLine("Please enter your last name.");
+            //string lastName = Console.ReadLine();
+            //int lengthofLast = lastName.Length;
+            ////Console.WriteLine(lengthofLast);
 
-            if(lengthofname > lengthofLast)
-            {
-                Console.WriteLine("First is longer");
-            }
-            else if(lengthofname == lengthofLast)
-            {
-                Console.WriteLine("Samsis");
-            }
-            else
-            {
-                Console.WriteLine("Last must be longer!");
-            }
+            //if(lengthofname > lengthofLast)
+            //{
+            //    Console.WriteLine("First is longer");
+            //}
+            //else if(lengthofname == lengthofLast)
+            //{
+            //    Console.WriteLine("Samsis");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Last must be longer!");
+            //}
 
+            Console.WriteLine("Enter a numder 1-9, lets see how holey it is!");
+            string num = Console.ReadLine();
+
+            switch(num)
+            {
+                case "0":
+                case "4":
+                case "6":
+                case "9":
+                    Console.WriteLine("Level one holey");
+                    break;
+
+                case "8":
+                    Console.WriteLine("Level two, most holey");
+                    break;
+
+                case "1":
+                case "2":
+                case "3":
+                case "5":
+                case "7":
+                    Console.WriteLine("Not holey at all!");
+                    break;
+
+                default:
+                    Console.WriteLine("FOLLOW INSTRUCTIONS");
+                    break;
+            }
 
         }
     }
